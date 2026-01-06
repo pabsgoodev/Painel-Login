@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, #0d2b52, transparent 40%),
+    radial-gradient(circle at 80% 80%, #061b3a, transparent 40%),
+    linear-gradient(180deg, #020617, #000814);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e6f2ff;
+}
+
+/* CONTAINER */
+.login-box {
+  width: 360px;
+  padding: 32px 28px;
+  background: rgba(8, 24, 48, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(63, 169, 245, 0.25);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  animation: fadeUp 0.6s ease;
+}
+
+/* TITULO */
+.login-box h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #8fd3ff;
+  letter-spacing: 1px;
+}
+
+/* LABEL */
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9bbfe5;
+  margin-bottom: 6px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background: rgba(2, 11, 24, 0.8);
+  border: 1px solid rgba(63, 169, 245, 0.25);
+  color: #e6f2ff;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+input::placeholder {
+  color: #5f7fa6;
+}
+
+input:focus {
+  border-color: #3fa9f5;
+  box-shadow: 0 0 0 3px rgba(63, 169, 245, 0.25);
+  background: rgba(2, 11, 24, 1);
+}
+
+/* BOTAO */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3fa9f5, #0d6efd);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(63, 169, 245, 0.45);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(63, 169, 245, 0.35);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 11px;
+  color: #7fa6d6;
+  opacity: 0.8;
+}
+
+/* ANIMACAO */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
